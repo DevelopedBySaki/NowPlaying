@@ -4,8 +4,8 @@
 
 ---
 
-# Structure
-## Pages
+## Structure
+### Pages
 - Now Paying
   - now playing Movies
   - now playing TV Shows
@@ -14,3 +14,6 @@
 - Popular TV Shows
   - include search option
 - Popular Actors
+- Movie details
+- TV Show details
+- Actor details
