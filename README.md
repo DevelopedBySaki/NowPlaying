@@ -5,4 +5,8 @@
 ---
 
 # Structure
-    ## Pages
+## Pages
+-- Now Paying
+-- Popular Movies
+-- Popular TV Shows
+-- Popular Actors
