@@ -7,6 +7,10 @@
 # Structure
 ## Pages
 - Now Paying
+  - now playing Movies
+  - now playing TV Shows
 - Popular Movies
+  - include search option
 - Popular TV Shows
+  - include search option
 - Popular Actors
