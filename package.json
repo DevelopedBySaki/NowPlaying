@@ -1,1 +1,16 @@
-{}
+{
+  "name": "nowplaying",
+  "description": "---",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "DevelopedBySaki",
+  "license": "MIT",
+  "type": "module"
+}

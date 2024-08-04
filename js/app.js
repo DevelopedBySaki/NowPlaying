@@ -1,21 +1,11 @@
-// import secrets.js from '../secrets/secrets.js';
+import { secrets } from '../secrets/secrets.js';
 
-const ActorsDetailsGet = async () => {
-  const url = 'https://api.themoviedb.org/3/person/person_id?language=en-US';
-  const options = {
-    method: 'GET',
-    headers: {
-      accept: 'application/json',
-      Authentication: 'None',
-    },
-  };
-  try {
-    const response = await fetch(url, options);
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
+const fetchData = async (reference) => {
+  const response = await fetch(`${secrets.url}${reference}?api_key=${secrets.apiKey}&language=en-US&sort_by=vote_average.desc`);
+  const data = await response.json();
+  return data;
 };
 
-ActorsDetailsGet();
+const actors = await fetchData('person/popular');
+
+console.log(actors.results[0]);
