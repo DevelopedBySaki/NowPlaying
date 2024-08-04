@@ -22,10 +22,13 @@
         <nav>
           <ul>
             <li>
-              <a class="nav-link" href="/">Movies</a>
+              <a class="nav-link" href="/movies.html">Movies</a>
             </li>
             <li>
               <a class="nav-link" href="/shows.html">TV Shows</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/actors.html">Actors</a>
             </li>
           </ul>
         </nav>
@@ -35,6 +38,7 @@
     <!-- Now Playing Section -->
     <section class="now-playing">
       <h2>Now Playing</h2>
+      <h2>Insert Swiper here</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
           <!-- <div class="swiper-slide">
@@ -49,31 +53,9 @@
       </div>
     </section>
 
-    <!-- Search Movies -->
-    <section class="search">
-      <div class="container">
-        <div id="alert"></div>
-        <form action="/search.html" class="search-form">
-          <!-- movies and shows radio box -->
-          <div class="search-radio">
-            <input type="radio" id="movie" name="type" value="movie" checked />
-            <label for="movies">Movies</label>
-            <input type="radio" id="tv" name="type" value="tv" />
-            <label for="shows">TV Shows</label>
-          </div>
-          <div class="search-flex">
-            <input type="text" name="search-term" id="search-term" placeholder="Enter search term" />
-            <button class="btn" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Popular Movies -->
+    <!-- Now Playing Movies -->
     <section class="container">
-      <h2>Popular Movies</h2>
+      <h2>Now Playing Movies</h2>
       <div id="popular-movies" class="grid">
         <div class="card">
           <a href="movie-details.html?id=1">
@@ -119,47 +101,52 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2>Now Playing TV Shows</h2>
+      <div id="popular-shows" class="grid">
         <div class="card">
-          <a href="movie-details.html?id=1">
-            <img src="images/no-image.jpg" class="card-img-top" alt="Movie Title" />
+          <a href="tv-details.html?id=1">
+            <img src="images/no-image.jpg" class="card-img-top" alt="Show Title" />
           </a>
           <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
+            <h5 class="card-title">Show Title</h5>
             <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
+              <small class="text-muted">Aired: XX/XX/XXXX</small>
             </p>
           </div>
         </div>
         <div class="card">
-          <a href="movie-details.html?id=1">
-            <img src="images/no-image.jpg" class="card-img-top" alt="Movie Title" />
+          <a href="tv-details.html?id=1">
+            <img src="images/no-image.jpg" class="card-img-top" alt="Show Title" />
           </a>
           <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
+            <h5 class="card-title">Show Title</h5>
             <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
+              <small class="text-muted">Aired: XX/XX/XXXX</small>
             </p>
           </div>
         </div>
         <div class="card">
-          <a href="movie-details.html?id=1">
-            <img src="images/no-image.jpg" class="card-img-top" alt="Movie Title" />
+          <a href="tv-details.html?id=1">
+            <img src="images/no-image.jpg" class="card-img-top" alt="Show Title" />
           </a>
           <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
+            <h5 class="card-title">Show Title</h5>
             <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
+              <small class="text-muted">Aired: XX/XX/XXXX</small>
             </p>
           </div>
         </div>
         <div class="card">
-          <a href="movie-details.html?id=1">
-            <img src="images/no-image.jpg" class="card-img-top" alt="Movie Title" />
+          <a href="tv-details.html?id=1">
+            <img src="images/no-image.jpg" class="card-img-top" alt="Show Title" />
           </a>
           <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
+            <h5 class="card-title">Show Title</h5>
             <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
+              <small class="text-muted">Aired: XX/XX/XXXX</small>
             </p>
           </div>
         </div>
@@ -169,7 +156,7 @@
     <!-- Footer -->
     <footer class="main-footer">
       <div class="container">
-        <div class="logo"><span>FLIXX</span></div>
+        <div class="logo"><span>Now Playing</span></div>
         <div class="social-links">
           <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -177,7 +164,6 @@
         </div>
       </div>
     </footer>
-
     <div class="spinner"></div>
   </body>
 </html>

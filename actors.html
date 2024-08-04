@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="lib/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/spinner.css"
+    />
+    <script
+      src="js/script.js"
+      defer
+    ></script>
+    <title>Now Playing</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">Now Playing</a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="/movies.html"
+                class="nav-link"
+                >Movies</a
+              >
+            </li>
+            <li>
+              <a
+                href="/shows.html"
+                class="nav-link"
+                >TV Shows</a
+              >
+            </li>
+            <li>
+              <a
+                href="/actors.html"
+                class="nav-link"
+                >Actors</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="search">
+      <div class="container">
+        <div id="alert"></div>
+        <form
+          action="/search.html"
+          class="search-form"
+        >
+          <div class="search-radio">
+            <input
+              type="radio"
+              name="type"
+              id="movie"
+              value="movie"
+              checked
+            />
+            <label for="movies">Movies</label>
+            <input
+              type="radio"
+              name="type"
+              id="tv"
+              value="tv"
+            />
+            <label for="shows">TV Shows</label>
+            <input
+              type="radio"
+              name="type"
+              id="actor"
+              value="actor"
+            />
+            <label for="actors">Actors</label>
+          </div>
+          <div class="search-flex">
+            <input
+              type="text"
+              name="search-term"
+              id="search-term"
+              placeholder="Enter search term"
+            />
+            <button
+              class="btn"
+              type="submit"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="container">
+      <h2>Popular Actors</h2>
+      <div
+        class="grid"
+        id="popular-actors"
+      >
+        <div class="card">
+          <a href="actor-details.html?id=1">
+            <img
+              src="images/no-image.jpg"
+              alt="Actor Name"
+              class="card-img-top"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Actor Name</h5>
+            <p class="card-text">
+              <small class="text-muted">
+                <!-- ToDo: Check API what info I can add -->
+                Something
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
